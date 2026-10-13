@@ -5,5 +5,8 @@ import { liveIntelPlugin } from './src/liveIntelPlugin.js'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), liveIntelPlugin()],
+  server: {
+    host: true,
+  },
 })
 
